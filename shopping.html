@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Total shopping Price</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-r from-purple-900 to-violet-700">
+    <header>
+      <h3
+        class="text-center text-3xl mt-16 font-semibold capitalize text-white"
+      >
+        Please provide your Purchase Price
+      </h3>
+    </header>
+    2
+    <main class="mx-52 mt-10">
+      <section>
+        <div class="grid grid-cols-3 gap-12">
+          <div
+            class="bg-white p-10 px-8 rounded-lg bg-[url(./images/shopping.webp)]"
+          >
+            <h3 class="capitalize text-2xl font-semibold text-violet-800">
+              Purchase price
+            </h3>
+            <h3 class="text-3xl mt-3 font-bold text-violet-900">
+              $<span id="purchase-cost">00</span>
+            </h3>
+          </div>
+          <div
+            class="bg-white p-10 px-8 rounded-lg bg-[url(./images/shopping.webp)]"
+          >
+            <h3 class="capitalize text-2xl font-semibold text-violet-800">
+              discount
+            </h3>
+            <h3 class="text-3xl mt-3 font-bold text-violet-900">
+              <span id="discount">00</span>%
+            </h3>
+          </div>
+          <div
+            class="bg-white p-10 px-8 rounded-lg bg-[url(./images/shopping.webp)]"
+          >
+            <h3 class="capitalize text-2xl font-semibold text-violet-800">
+              Total Purchase price
+            </h3>
+            <h3 class="text-3xl mt-3 font-bold text-violet-900">
+              $<span id="total-cost">00</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section class="text-center mt-10">
+        <div class="p-10 rounded-lg w-8/12 mx-auto text-center">
+          <input
+            id="amount"
+            class="w-8/12 text-center py-2 border-b border-slate-300 bg-transparent text-white outline-none capitalize"
+            type="text"
+            placeholder="Enter Your Total price"
+          />
+          <button
+            id="send"
+            class="bg-gradient-to-r from-purple-400 to-violet-500 px-8 py-2 rounded-full shadow-md shadow-zinc-200 text-white font-bold text-xl outline-none"
+          >
+            Send
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/shopping.js"></script>
+  </body>
+</html>
